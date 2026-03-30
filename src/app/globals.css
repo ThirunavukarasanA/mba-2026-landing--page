@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+/* Ref (ATHE / RVS studyabroad) design tokens — align with ref/ATHE page */
+@theme {
+  /* Primary brand */
+  --color-booth-maroon: #7c0201;
+  --color-booth-maroon-dark: #5a0101;
+  --color-booth-bg-gray: #f8f7f4;
+  --color-booth-dark-gray: #1a1613;
+  --color-booth-light-gray: #5a5650;
+  --color-booth-muted: #8a8580;
+  --color-booth-border: #e4e1dc;
+  --color-booth-teal: #005757;
+  /* Legacy aliases */
+  --color-booth-teal-alt: #0d5c63;
+}
+
+/* Ref section pattern: small uppercase label + red bar */
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-booth-maroon);
+  margin-bottom: 1rem;
+  font-family: var(--font-barlow), ui-sans-serif, system-ui, sans-serif;
+}
+.section-title-bar {
+  width: 3rem;
+  height: 3px;
+  background-color: var(--color-booth-maroon);
+  margin-bottom: 1.5rem;
+}
+.ref-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .ref-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+.ref-body {
+  font-size: 1.0625rem;
+  color: var(--color-booth-light-gray);
+  line-height: 1.75;
+}
+
+.font-trade-gothic-bold {
+  font-family: var(--font-barlow), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 700;
+}
+.font-trade-gothic-light {
+  font-family: var(--font-barlow), ui-sans-serif, system-ui, sans-serif;
+  font-weight: 400;
+}
